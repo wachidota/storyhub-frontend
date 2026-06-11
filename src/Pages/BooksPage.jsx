@@ -14,7 +14,7 @@ import PageTitle from "../components/common/PageTitle";
 import LoadingState from "../components/common/LoadingState";
 import ErrorState from "../components/common/ErrorState";
 import EmptyState from "../components/common/EmptyState";
-import Pagination from "../components/common/Pagination";
+import Pagination from "../components/common/pagination";
 
 import BookGrid from "../components/books/BookGrid";
 import CategoryFilter from "../components/books/CategoryFilter";

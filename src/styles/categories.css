@@ -1,0 +1,102 @@
+/* =========================
+   MANAGE CATEGORIES PAGE
+========================= */
+
+.manage-categories-page {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+/* Título principal sobre fondo oscuro */
+.manage-categories-page .page-title,
+.manage-categories-page .page-title h1,
+.manage-categories-page > h1 {
+    color: #ffffff;
+    text-align: center;
+}
+
+/* Cards de la página */
+.manage-categories-card {
+    background: #ffffff;
+    color: var(--color-text, #26222f);
+}
+
+/* SectionHeader dentro de las cards */
+.manage-categories-card .section-header {
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.manage-categories-card .section-header h1,
+.manage-categories-card .section-header h2,
+.manage-categories-card .section-header h3 {
+    color: var(--color-text, #26222f);
+}
+
+/* Formulario */
+.manage-categories-card label {
+    color: var(--color-text, #26222f);
+}
+
+.manage-categories-card input {
+    background: #ffffff;
+    color: var(--color-text, #26222f);
+}
+
+/* Lista de categorías */
+.manage-categories-page .category-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.manage-categories-page .category-row {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    gap: 1rem;
+
+    padding: 0.85rem 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.manage-categories-page .category-row:last-child {
+    border-bottom: none;
+}
+
+.manage-categories-page .category-row span {
+    color: var(--color-text, #26222f);
+    font-weight: 700;
+    text-align: left;
+}
+
+/* Botón eliminar */
+.manage-categories-page .category-row .btn {
+    flex-shrink: 0;
+}
+
+/* EmptyState dentro de esta página */
+.manage-categories-page .empty-state,
+.manage-categories-page .empty-state h1,
+.manage-categories-page .empty-state h2,
+.manage-categories-page .empty-state h3,
+.manage-categories-page .empty-state p {
+    color: var(--color-text, #26222f);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .manage-categories-page .category-row {
+        grid-template-columns: 1fr;
+    }
+
+    .manage-categories-page .category-row .btn {
+        width: 100%;
+        text-align: center;
+    }
+}

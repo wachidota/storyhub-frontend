@@ -1,0 +1,309 @@
+/* src/styles/chapter.css */
+
+/* =========================
+   CHAPTER DETAIL PAGE
+========================= */
+
+.chapter-content {
+    line-height: 1.8;
+    font-size: 1.05rem;
+    color: var(--color-text, #26222f);
+    white-space: pre-wrap;
+}
+
+.chapter-content p {
+    margin-bottom: 1rem;
+}
+
+/* =========================
+   CHAPTER TITLE CARD
+========================= */
+
+.chapter-title-card h1 {
+    margin: 0 0 1rem;
+    font-size: clamp(2rem, 4vw, 3.2rem);
+    line-height: 1.1;
+    font-weight: 900;
+}
+
+/* =========================
+   CHAPTER NAVIGATION
+========================= */
+
+.chapter-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+
+    margin-top: 1.5rem;
+}
+
+.chapter-navigation a,
+.chapter-navigation .btn {
+    text-align: center;
+}
+
+.chapter-navigation-center {
+    margin: 0 auto;
+}
+
+/* =========================
+   CHAPTER ACTIONS
+========================= */
+
+.chapter-actions {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 1.5rem 0 2rem;
+}
+
+/* =========================
+   COMMENT FORM
+========================= */
+
+.comment-form {
+    margin-bottom: 2rem;
+}
+
+.comment-form textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+/* =========================
+   COMMENT LIST
+========================= */
+
+.comment-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.comment-card {
+    background: var(--color-card, #ffffff);
+    border-radius: var(--border-radius, 14px);
+    padding: 1rem 1.25rem;
+
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+}
+
+.comment-card h3,
+.comment-card h4 {
+    margin: 0 0 0.5rem;
+    font-size: 1rem;
+}
+
+.comment-card p {
+    margin: 0.35rem 0;
+    line-height: 1.55;
+}
+
+.comment-author {
+    font-weight: 800;
+    color: var(--color-primary, #7c5cff);
+}
+
+.comment-date {
+    color: var(--color-muted, #6f6a7c);
+    font-size: 0.85rem;
+}
+
+/* =========================
+   CHAPTER FORM PAGE
+   CreateChapterPage / EditChapterPage
+========================= */
+
+.chapter-form-page h1 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.chapter-form-page p {
+    color: var(--color-muted, #6f6a7c);
+    margin-bottom: 1.5rem;
+}
+.chapter-number-preview {
+    color: var(--color-text, #26222f);
+    font-weight: 600;
+}
+/* =========================
+   COMMENTS ON DARK BACKGROUND
+========================= */
+
+.comments-section,
+.comments-section h1,
+.comments-section h2,
+.comments-section h3,
+.comments-section label {
+    color: #ffffff;
+}
+
+.comments-section p,
+.comments-section small {
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.comments-section textarea {
+    background: #ffffff;
+    color: var(--color-text, #26222f);
+}
+
+.comments-section textarea::placeholder {
+    color: var(--color-muted, #6f6a7c);
+}
+
+/* EmptyState dentro de comentarios */
+.comments-section .empty-state {
+    background: #ffffff;
+    color: var(--color-text, #26222f);
+}
+
+.comments-section .empty-state h1,
+.comments-section .empty-state h2,
+.comments-section .empty-state h3,
+.comments-section .empty-state p {
+    color: var(--color-text, #26222f);
+}
+/* =========================
+   COMMENT CARD
+========================= */
+
+.comment-card {
+    background: #ffffff;
+    color: var(--color-text, #26222f);
+}
+
+.comment-card .comment-author {
+    margin: 0 0 0.5rem;
+    color: var(--color-primary, #7c5cff);
+    font-weight: 800;
+}
+
+.comment-card .comment-content {
+    margin: 0;
+    color: var(--color-text, #26222f);
+    line-height: 1.6;
+    white-space: pre-wrap;
+}
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+    .chapter-content {
+        font-size: 1rem;
+        line-height: 1.7;
+    }
+
+    .chapter-navigation {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .chapter-navigation a,
+    .chapter-navigation .btn {
+        width: 100%;
+    }
+
+    .chapter-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .chapter-actions .btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    .comment-card {
+        padding: 1rem;
+    }
+}
+/* =========================
+   CHAPTER DETAIL LAYOUT
+========================= */
+
+.chapter-detail-page {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.chapter-main-card {
+    padding: 2rem;
+}
+
+.chapter-content-card {
+    padding: 2.5rem;
+}
+
+.chapter-main-card h1 {
+    margin: 0 0 1.5rem;
+    color: var(--color-text, #26222f);
+}
+
+.chapter-main-card .breadcrumb {
+    margin-bottom: 1rem;
+}
+
+.chapter-main-card .chapter-navigation {
+    margin-top: 1.5rem;
+}
+
+.chapter-main-card .chapter-actions {
+    margin-top: 1.75rem;
+    margin-bottom: 0;
+}
+
+.chapter-content {
+    color: var(--color-text, #26222f);
+    line-height: 1.85;
+    font-size: 1.08rem;
+    white-space: pre-wrap;
+}
+
+/* =========================
+   CHAPTER COMMENTS
+========================= */
+
+.chapter-comments-section {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.chapter-comments-section .section-header {
+    margin: 0.5rem 0 0;
+}
+
+.chapter-comments-section .section-header h2 {
+    color: #ffffff;
+}
+
+.chapter-comments-section .comment-form {
+    margin-bottom: 1rem;
+}
+
+.chapter-comments-section .comment-form label {
+    color: #ffffff;
+}
+
+.chapter-comments-section .empty-state,
+.chapter-comments-section .empty-state h1,
+.chapter-comments-section .empty-state h2,
+.chapter-comments-section .empty-state h3,
+.chapter-comments-section .empty-state p {
+    color: var(--color-text, #26222f);
+}
+.chapter-navigation .btn-disabled {
+    background: rgba(124, 92, 255, 0.35);
+    color: rgba(255, 255, 255, 0.8);
+    cursor: not-allowed;
+    pointer-events: none;
+}

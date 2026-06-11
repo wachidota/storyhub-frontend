@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Detalle del Libro</title>
+
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/book.css">
+
+</head>
+<body>
+
+<nav class="navbar">
+
+    <div class="container navbar-content">
+
+        <div class="logo">
+            StoryHub
+        </div>
+
+        <div class="nav-links">
+
+            <a href="dashboard.html">
+                Dashboard
+            </a>
+
+            <a href="books.html">
+                Biblioteca
+            </a>
+
+        </div>
+
+    </div>
+
+</nav>
+
+<main class="container">
+
+    <!-- Información principal -->
+
+    <section class="book-header card">
+
+        <img
+            id="portadaLibro"
+            class="cover-large"
+            src=""
+            alt="Portada del libro">
+
+        <div class="book-info">
+
+            <h1 id="tituloLibro">
+                Cargando...
+            </h1>
+
+            <p>
+                <strong>Autor:</strong>
+                <span id="autorLibro">
+                    Cargando...
+                </span>
+            </p>
+
+            <div class="action-buttons">
+
+                <button
+                     id="btnLeer"
+                    class="btn btn-primary">
+                    Leer
+                </button>
+
+                <button
+                    id="btnEditar"
+                    class="btn btn-primary">
+                    Editar
+                </button>
+
+                <button
+                    id="btnEliminar"
+                    class="btn btn-danger">
+                    Eliminar
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Descripción -->
+
+    <section class="card">
+
+        <h2>
+            Sinopsis
+        </h2>
+
+        <p id="descripcionLibro">
+            Cargando descripción...
+        </p>
+
+    </section>
+
+    <!-- Capítulos -->
+
+    <section
+        class="card section-spacing">
+
+        <h2>
+            Capítulos
+        </h2>
+
+        <div id="listaCapitulos">
+
+            <!-- book.js inserta aquí -->
+
+        </div>
+
+    </section>
+
+    <!-- Reviews -->
+
+    <section
+        class="card section-spacing">
+
+        <h2>
+            Reviews
+        </h2>
+
+        <div id="reviewsContainer">
+
+            <p>
+                Próximamente.
+            </p>
+
+        </div>
+
+    </section>
+
+</main>
+
+<script src="js/guard.js"></script>
+<script src="js/api.js"></script>
+<script src="js/book.js"></script>
+
+</body>
+</html>

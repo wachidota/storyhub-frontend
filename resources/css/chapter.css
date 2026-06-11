@@ -1,0 +1,158 @@
+.chapter-header{
+
+    margin-bottom:2rem;
+
+}
+
+.breadcrumb{
+
+    color:var(--muted);
+
+    margin-bottom:1rem;
+
+}
+
+.chapter-nav{
+
+    display:flex;
+
+    gap:1rem;
+
+    flex-wrap:wrap;
+
+    margin-top:1.5rem;
+
+}
+
+.chapter-content{
+
+    font-size:1.1rem;
+
+    line-height:2;
+
+    white-space:pre-wrap;
+
+    word-break:break-word;
+
+    margin-bottom:2rem;
+
+}
+
+.chapter-content p{
+
+    margin-bottom:1.5rem;
+
+}
+
+.chapter-actions{
+
+    display:flex;
+
+    gap:1rem;
+
+    flex-wrap:wrap;
+
+    margin-bottom:2rem;
+
+}
+
+.comments-section{
+
+    margin-bottom:2rem;
+
+}
+
+.comment{
+
+    padding:1rem 0;
+
+    border-bottom:
+    1px solid var(--border);
+
+}
+
+.comment:last-child{
+
+    border-bottom:none;
+
+}
+
+.comment h4{
+
+    margin-bottom:.5rem;
+
+}
+
+.comment-author{
+
+    color:var(--muted);
+
+    font-size:.95rem;
+
+    margin-bottom:.5rem;
+
+}
+
+.comment-content{
+
+    line-height:1.7;
+
+}
+
+.loading-text{
+
+    color:var(--muted);
+
+}
+
+.empty-state{
+
+    color:var(--muted);
+
+    text-align:center;
+
+    padding:2rem 0;
+
+}
+
+.add-comment-section{
+
+    margin-top:2rem;
+
+}
+
+.add-comment-section textarea{
+
+    resize:vertical;
+
+    min-height:120px;
+
+}
+
+@media(max-width:768px){
+
+    .chapter-nav{
+
+        flex-direction:column;
+
+    }
+
+    .chapter-nav .btn{
+
+        width:100%;
+
+    }
+
+    .chapter-actions{
+
+        flex-direction:column;
+
+    }
+
+    .chapter-actions .btn{
+
+        width:100%;
+
+    }
+
+}

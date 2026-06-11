@@ -1,0 +1,21 @@
+/* src/styles.css */
+
+/* Base general del sitio */
+@import "./styles/global.css";
+
+/* Layout compartido */
+@import "./styles/layout.css";
+
+/* Biblioteca, libros, reviews y capítulos dentro de BookDetail */
+@import "./styles/books.css";
+
+/* Dashboard, perfil y gráficas */
+@import "./styles/dashboard.css";
+
+/* Detalle de capítulo, navegación y comentarios */
+@import "./styles/chapter.css";
+
+/* Formularios */
+@import "./styles/forms.css";
+
+@import "./styles/categories.css";

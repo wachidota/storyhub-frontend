@@ -1,0 +1,36 @@
+.auth-container{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:1rem;
+}
+
+.auth-card{
+    width:100%;
+    max-width:450px;
+}
+
+.auth-card h1{
+    text-align:center;
+    margin-bottom:.5rem;
+}
+
+.subtitle{
+    text-align:center;
+    margin-bottom:2rem;
+    color:var(--muted);
+}
+
+.auth-btn{
+    width:100%;
+}
+
+.bottom-link{
+    text-align:center;
+    margin-top:1rem;
+}
+
+.bottom-link a{
+    color:var(--primary);
+}

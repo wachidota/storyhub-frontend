@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Crear Libro</title>
+
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/create-book.css">
+
+</head>
+
+<body>
+
+<nav class="navbar">
+
+    <div class="container navbar-content">
+
+        <div class="logo">
+            StoryHub
+        </div>
+
+        <div class="nav-links">
+
+            <a href="dashboard.html">
+                Dashboard
+            </a>
+
+            <a href="books.html">
+                Biblioteca
+            </a>
+
+        </div>
+
+    </div>
+
+</nav>
+
+<main class="container">
+
+    <h1 class="page-title">
+        Crear Nuevo Libro
+    </h1>
+
+    <div class="create-layout">
+
+        <!-- Formulario -->
+
+        <section class="card">
+
+            <form id="createBookForm">
+
+                <div class="form-group">
+
+                    <label for="titulo">
+                         Título
+                    </label>
+
+
+                    <input
+                        id="titulo"
+                        type="text"
+                        placeholder="Nombre del libro"
+                        required>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label>
+                        URL de la portada
+                    </label>
+
+                    <input
+                        id="portada"
+                        type="url"
+                        placeholder="https://ejemplo.com/imagen.jpg"
+                        required>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label>
+                        Descripción
+                    </label>
+
+                    <textarea
+                        id="descripcion"
+                        rows="8"
+                        placeholder="Describe tu historia..."
+                        required>
+                    </textarea>
+
+                </div>
+
+                <div class="form-group">
+
+                    <label>
+                        Categorías
+                    </label>
+
+                    <select
+                        id="categorias"
+                        multiple
+                        size="8">
+
+                        <!-- create-book.js carga aquí -->
+
+                    </select>
+
+                    <small>
+
+                        Mantén presionada
+                        CTRL (Windows)
+                        o CMD (Mac)
+                        para seleccionar varias.
+
+                    </small>
+
+                </div>
+
+                <button
+                    type="submit"
+                    class="btn btn-primary">
+
+                    Crear Libro
+
+                </button>
+
+            </form>
+
+        </section>
+
+        <!-- Sidebar -->
+
+        <aside class="sidebar">
+
+            <div class="card ai-box">
+
+                <h2>
+                    🤖 Asistente IA
+                </h2>
+
+                <div class="placeholder-box">
+
+                    PON LA IA AQUÍ
+
+                </div>
+
+            </div>
+
+            <div class="card recommendations">
+
+                <h2>
+                    📚 Recomendaciones
+                </h2>
+
+                <div class="placeholder-box">
+
+                    PON LAS RECOMENDACIONES AQUÍ
+
+                </div>
+
+            </div>
+
+        </aside>
+
+    </div>
+
+</main>
+
+<script src="js/guard.js"></script>
+<script src="js/api.js"></script>
+<script src="js/create-book.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Capítulo</title>
+
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/chapter.css">
+
+</head>
+
+<body>
+
+<nav class="navbar">
+
+    <div class="container navbar-content">
+
+        <div class="logo">
+            StoryHub
+        </div>
+
+        <div class="nav-links">
+
+            <a href="dashboard.html">
+                Dashboard
+            </a>
+
+            <a href="books.html">
+                Biblioteca
+            </a>
+
+        </div>
+
+    </div>
+
+</nav>
+
+<main class="container">
+
+    <!-- Encabezado -->
+
+    <section class="card chapter-header">
+
+        <p class="breadcrumb">
+
+            Libro:
+
+            <span id="bookTitle">
+
+                Cargando libro...
+
+            </span>
+
+        </p>
+
+        <h1 id="chapterTitle">
+
+            Cargando capítulo...
+
+        </h1>
+
+        <div class="chapter-nav">
+
+            <button
+                id="btnAnterior"
+                class="btn btn-primary">
+
+                ← Anterior
+
+            </button>
+
+            <a
+                id="bookLink"
+                href="#"
+                class="btn btn-primary">
+
+                📖 Volver al Libro
+
+            </a>
+
+            <button
+                id="btnSiguiente"
+                class="btn btn-primary">
+
+                Siguiente →
+
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- Contenido -->
+
+    <section
+        id="chapterContent"
+        class="card chapter-content">
+
+        Cargando contenido...
+
+    </section>
+
+    <!-- Acciones -->
+
+    <section class="chapter-actions">
+
+        <button
+            id="btnEditar"
+            class="btn btn-primary">
+
+            Editar Capítulo
+
+        </button>
+
+        <button
+            id="btnEliminar"
+            class="btn btn-danger">
+
+            Eliminar Capítulo
+
+        </button>
+
+    </section>
+
+    <!-- Comentarios -->
+
+    <section
+        class="card comments-section">
+
+        <h2>
+            Comentarios
+        </h2>
+
+        <div id="comments">
+
+            <p class="loading-text">
+                Cargando comentarios...
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- Nuevo comentario -->
+
+    <section
+        class="card add-comment-section">
+
+        <h2>
+            Agregar Comentario
+        </h2>
+
+        <form id="commentForm">
+
+            <div class="form-group">
+
+                <label for="commentContent">
+
+                    Comentario
+
+                </label>
+
+                <textarea
+                    id="commentContent"
+                    rows="6"
+                    placeholder="Escribe tu comentario..."
+                    required></textarea>
+
+            </div>
+
+            <button
+                type="submit"
+                id="btnComment"
+                class="btn btn-primary">
+
+                Publicar Comentario
+
+            </button>
+
+        </form>
+
+    </section>
+
+</main>
+
+<script src="js/api.js"></script>
+
+</body>
+</html>

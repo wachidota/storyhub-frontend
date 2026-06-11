@@ -1,0 +1,181 @@
+:root{
+    --bg:#0f172a;
+    --surface:#1e293b;
+    --card:#334155;
+    --primary:#3b82f6;
+    --primary-hover:#2563eb;
+    --text:#f8fafc;
+    --muted:#94a3b8;
+    --border:#475569;
+    --success:#22c55e;
+    --danger:#ef4444;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:var(--bg);
+    color:var(--text);
+    font-family:Segoe UI,Tahoma,Geneva,Verdana,sans-serif;
+    min-height:100vh;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+.container{
+    width:min(1200px,95%);
+    margin:auto;
+}
+
+.navbar{
+    background:var(--surface);
+    border-bottom:1px solid var(--border);
+}
+
+.navbar-content{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:1rem 0;
+}
+
+.logo{
+    font-size:1.5rem;
+    font-weight:bold;
+}
+
+.nav-links{
+    display:flex;
+    gap:1rem;
+}
+
+.btn{
+    border:none;
+    cursor:pointer;
+    padding:.8rem 1.2rem;
+    border-radius:8px;
+    transition:.3s;
+    font-weight:600;
+}
+
+.btn-primary{
+    background:var(--primary);
+    color:white;
+}
+
+.btn-primary:hover{
+    background:var(--primary-hover);
+}
+
+.btn-danger{
+    background:var(--danger);
+    color:white;
+}
+
+.card{
+    background:var(--card);
+    border-radius:12px;
+    padding:1.5rem;
+    border:1px solid var(--border);
+}
+
+input,
+textarea,
+select{
+    width:100%;
+    padding:.9rem;
+    border-radius:8px;
+    border:1px solid var(--border);
+    background:#1a2435;
+    color:white;
+}
+
+input:focus,
+textarea:focus,
+select:focus{
+    outline:none;
+    border-color:var(--primary);
+}
+
+.form-group{
+    margin-bottom:1rem;
+}
+
+.page-title{
+    margin-bottom:1.5rem;
+    font-size:2rem;
+}
+
+.grid{
+    display:grid;
+    gap:1.5rem;
+}
+.loading-state{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:3rem;
+
+    font-size:1.1rem;
+
+}
+.auth-container{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:1rem;
+}
+
+.auth-card{
+    width:100%;
+    max-width:450px;
+}
+
+.auth-card h1{
+    text-align:center;
+    margin-bottom:.5rem;
+}
+
+.subtitle{
+    text-align:center;
+    margin-bottom:2rem;
+    color:var(--muted);
+}
+
+.auth-btn{
+    width:100%;
+}
+
+.bottom-link{
+    text-align:center;
+    margin-top:1rem;
+}
+
+.bottom-link a{
+    color:var(--primary);
+}
+
+@media(max-width:768px){
+
+    .navbar-content{
+        flex-direction:column;
+        gap:1rem;
+    }
+
+    .nav-links{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+}
